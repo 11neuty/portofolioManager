@@ -53,8 +53,8 @@ Kami terbuka untuk kontribusi! Tapi karena ini masih tahap pembangunan:
 
 ## 📫 Kontak
 
-Kalau kamu ingin berdiskusi, bertanya, atau hanya ingin curhat:
-📧 `ryandaffapratama@gmail.com`  
+Kalau kamu ingin berdiskusi, bertanya, atau hanya ingin curhat:<br>
+📧 `ryandaffapratama@gmail.com` <br>
 🐦 @11neuty
 
 ---
