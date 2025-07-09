@@ -1,5 +1,4 @@
-# 🚧 Project is under construction! 🚧
-
+<h1 align="center">🚧 Project is under construction! 🚧</h1>
 <div align="center">
   <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWJlNDc3NnpjZXJpZzNsYzQ2Y2dsZGNoaDh5Zzcxb2pvZzhkd21xbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xZsLh7B3KMMyUptD9D/giphy.gif" alt="Under Construction GIF" />
 </div>
