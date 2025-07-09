@@ -1,4 +1,4 @@
-# 🚧 Portofolio Manager – Masih dalam Pengerjaan! 🚧
+# 🚧 Portofolio Manager – Project is under construction! 🚧
 
 ![Under Construction](https://media.giphy.com/media/l0MYB8Ory7Hqefo9a/giphy.gif)
 
