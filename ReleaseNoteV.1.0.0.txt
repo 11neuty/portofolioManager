@@ -1,0 +1,115 @@
+## 📢 **Release Note – PortoSaham v1.0.0**
+
+**Release Date:** 9 Juli 2025
+**Status:** First Release (MVP)
+
+---
+
+### 🚀 Overview
+
+Versi pertama dari *PortoSaham* kini telah selesai! Aplikasi ini memungkinkan pengguna melacak portofolio saham, memantau performa investasi, dan melihat pendapatan dividen dalam antarmuka yang bersih dan minimalis.
+
+---
+
+## 🧩 Fitur Utama yang Telah Dibuat
+
+### 🔸 **Frontend (Mobile-first Web App | React.js + Tailwind CSS)**
+
+1. **Dashboard Utama**
+
+   * Tampilan nilai total portofolio
+   * Grafik pertumbuhan portofolio (dummy chart)
+   * Tombol `+ Add Transaction`
+
+2. **Section Holdings**
+
+   * List saham dimiliki (kode saham, harga beli, lot)
+   * Informasi gain/loss dalam nominal dan persentase
+
+3. **Section Performance**
+
+   * Visualisasi dalam bentuk pie chart komposisi saham
+
+4. **Section Dividends**
+
+   * Informasi dividen yang diterima (kode saham, tanggal, nominal)
+
+5. **Responsiveness**
+
+   * Tampilan mendukung mobile dan tablet
+   * Dark mode disiapkan untuk versi mendatang
+
+---
+
+### 🔹 **Backend (Node.js + Express + MongoDB)**
+
+1. **User Authentication (JWT)**
+
+   * Register / Login endpoint
+   * Middleware untuk melindungi route pribadi
+
+2. **Transaction Management**
+
+   * `POST /api/transactions` → Tambah transaksi
+   * `GET /api/transactions` → Ambil semua transaksi user
+   * `PUT /api/transactions/:id` → Edit transaksi
+   * `DELETE /api/transactions/:id` → Hapus transaksi
+
+3. **Portfolio Aggregation**
+
+   * Hitung nilai total portofolio secara dinamis
+   * Kalkulasi average price per saham
+   * Hitung realized & unrealized gain/loss
+
+4. **Dividen Management**
+
+   * `GET /api/dividends` → Ambil data dividen per saham
+   * `POST /api/dividends` → Tambah record dividen
+   * Hitung total pendapatan dividen
+
+5. **Stock Price Integration**
+
+   * Integrasi dummy API dari Yahoo Finance untuk harga saham realtime
+   * Fungsi perhitungan performa berdasarkan harga pasar terkini
+
+---
+
+## 🛠️ Struktur Folder
+
+```
+/client (React Frontend)
+  └── src/
+      ├── components/
+      ├── pages/
+      └── services/
+
+/server (Express Backend)
+  └── src/
+      ├── controllers/
+      ├── models/
+      ├── routes/
+      └── middleware/
+```
+
+---
+
+## ✅ TODO Selanjutnya (Next Release Plan v1.1.0)
+
+* 🔄 Update harga realtime otomatis (interval background job)
+* 📈 Tambah grafik histori harga per saham
+* 🔔 Notifikasi untuk target harga atau dividen
+* 📤 Export data portofolio ke CSV
+* 📱 Versi mobile native (React Native atau Flutter)
+* 🌙 Dark mode UI
+
+---
+
+## 📌 Teknologi yang Digunakan
+
+| Layer      | Stack                                  |
+| ---------- | -------------------------------------- |
+| Frontend   | React.js, Tailwind CSS, Chart.js       |
+| Backend    | Node.js, Express.js, MongoDB, Mongoose |
+| Auth       | JWT Token                              |
+| API        | Yahoo Finance API (via RapidAPI)       |
+| Deployment | Vercel (FE), Railway (BE + DB)         |
