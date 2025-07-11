@@ -7,7 +7,6 @@ const {
   deleteTransaction,
 } = require("../controllers/transactionController");
 
-// Semua route ini perlu token (harus login)
 router.post("/", authMiddleware, createTransaction);
 router.get("/", authMiddleware, getTransactions);
 router.delete("/:id", authMiddleware, deleteTransaction);
