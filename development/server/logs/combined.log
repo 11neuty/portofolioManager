@@ -5,3 +5,44 @@
 [2025-07-11 10:27:53] WARN: [LOGIN] Gagal - Email tidak ditemukan: ryan@gmail.com
 [2025-07-11 10:28:01] INFO: [LOGIN] Berhasil - test@gmail.com (ID: 6870789445caafba1cac9b99)
 [2025-07-11 10:30:52] INFO: [GET] 2 transaksi diambil oleh user 687080d49bb1d1fe0a488d22
+[2025-07-12 08:24:00] INFO: [REGISTER] Berhasil - User terdaftar: fifi@gmail.com
+[2025-07-12 08:24:12] INFO: [LOGIN] Berhasil - fifi@gmail.com (ID: 6871b93024f9c5b76daadfa9)
+[2025-07-12 08:27:43] INFO: [CREATE] Transaksi berhasil ditambahkan oleh user 6871b93024f9c5b76daadfa9
+[2025-07-12 08:27:57] INFO: [GET] 1 transaksi diambil oleh user 6871b93024f9c5b76daadfa9
+[2025-07-12 14:06:51] WARN: [LOGIN] Gagal - Email tidak ditemukan: ryan@gmail.com
+[2025-07-12 14:06:56] WARN: [LOGIN] Gagal - Email tidak ditemukan: ryan@gmail.com
+[2025-07-12 14:06:59] WARN: [REGISTER] Gagal - Email sudah digunakan: fifi@gmail.com
+[2025-07-12 14:07:09] INFO: [REGISTER] Berhasil - User terdaftar: ryan@gmail.com
+[2025-07-12 14:07:13] INFO: [LOGIN] Berhasil - ryan@gmail.com (ID: 6872099db238c17861d173ca)
+[2025-07-12 14:07:33] INFO: [CREATE] Transaksi berhasil ditambahkan oleh user 6872099db238c17861d173ca
+[2025-07-12 14:07:46] INFO: [GET] 1 transaksi diambil oleh user 6872099db238c17861d173ca
+[2025-07-12 14:09:53] WARN: [UPDATE] Transaksi dengan ID 6872099db238c17861d173ca tidak ditemukan untuk user 6872099db238c17861d173ca
+[2025-07-12 14:10:35] INFO: [GET] 1 transaksi diambil oleh user 6872099db238c17861d173ca
+[2025-07-12 14:10:54] WARN: [UPDATE] Transaksi dengan ID 6872099db238c17861d173ca tidak ditemukan untuk user 6872099db238c17861d173ca
+[2025-07-12 14:11:07] INFO: [UPDATE] Transaksi 687209b5b238c17861d173cd diubah oleh user 6872099db238c17861d173ca
+[2025-07-12 14:11:27] INFO: [GET] 1 transaksi diambil oleh user 6872099db238c17861d173ca
+[2025-07-12 14:12:09] INFO: [UPDATE] Transaksi 687209b5b238c17861d173cd diubah oleh user 6872099db238c17861d173ca
+[2025-07-12 14:12:12] INFO: [UPDATE] Transaksi 687209b5b238c17861d173cd diubah oleh user 6872099db238c17861d173ca
+[2025-07-12 14:12:16] INFO: [GET] 1 transaksi diambil oleh user 6872099db238c17861d173ca
+[2025-07-12 14:13:10] INFO: [GET] 1 transaksi diambil oleh user 6872099db238c17861d173ca
+[2025-07-12 14:14:18] INFO: [UPDATE] Transaksi 687209b5b238c17861d173cd diubah oleh user 6872099db238c17861d173ca
+[2025-07-12 14:14:25] INFO: [UPDATE] Transaksi 687209b5b238c17861d173cd diubah oleh user 6872099db238c17861d173ca
+[2025-07-12 14:14:42] INFO: [UPDATE] Transaksi 687209b5b238c17861d173cd diubah oleh user 6872099db238c17861d173ca
+[2025-07-12 14:15:10] INFO: [GET] 1 transaksi diambil oleh user 6872099db238c17861d173ca
+[2025-07-12 14:16:00] INFO: [UPDATE] Transaksi 687209b5b238c17861d173cd diubah oleh user 6872099db238c17861d173ca
+[2025-07-12 14:17:30] INFO: [UPDATE] Transaksi 687209b5b238c17861d173cd diubah oleh user 6872099db238c17861d173ca
+[2025-07-12 14:19:36] INFO: [UPDATE] Transaksi 687209b5b238c17861d173cd diubah oleh user 6872099db238c17861d173ca
+[2025-07-12 14:19:39] INFO: [GET] 1 transaksi diambil oleh user 6872099db238c17861d173ca
+[2025-07-12 14:26:11] INFO: [GET] 1 transaksi diambil oleh user 6872099db238c17861d173ca
+[2025-07-12 14:26:14] INFO: [UPDATE] Transaksi 687209b5b238c17861d173cd diubah oleh user 6872099db238c17861d173ca
+[2025-07-12 14:26:20] INFO: [GET] 1 transaksi diambil oleh user 6872099db238c17861d173ca
+[2025-07-12 14:27:36] INFO: [UPDATE] Transaksi 687209b5b238c17861d173cd diubah oleh user 6872099db238c17861d173ca
+[2025-07-12 14:27:40] INFO: [UPDATE] Transaksi 687209b5b238c17861d173cd diubah oleh user 6872099db238c17861d173ca
+[2025-07-12 14:33:33] INFO: [UPDATE] Transaksi 687209b5b238c17861d173cd diubah oleh user 6872099db238c17861d173ca
+[2025-07-12 14:35:51] INFO: [GET] 1 transaksi diambil oleh user 6872099db238c17861d173ca
+[2025-07-12 14:36:56] INFO: [GET] 1 transaksi diambil oleh user 6872099db238c17861d173ca
+[2025-07-12 14:43:46] INFO: [GET] 1 transaksi diambil oleh user 6872099db238c17861d173ca
+[2025-07-12 14:51:36] INFO: ✅ MongoDB connected
+[2025-07-12 14:51:36] INFO: 🚀 Server running on port 5000
+[2025-07-12 15:23:48] INFO: ✅ MongoDB connected
+[2025-07-12 15:23:48] INFO: 🚀 Server running on port 5000

@@ -1,0 +1,21 @@
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.*  # kalau kamu pakai .env.development, .env.test, dll
+
+# System
+.DS_Store
+Thumbs.db
+
+# Node modules
+node_modules/
+
+# OS-specific
+*.swp
+*.swo

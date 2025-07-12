@@ -1,7 +1,15 @@
 const { createLogger, format, transports } = require("winston");
+const DailyRotateFile = require("winston-daily-rotate-file");
 const path = require("path");
+const fs = require("fs");
 
-// Format log: [timestamp] level: message
+// Pastikan direktori log tersedia
+const logDir = path.join(__dirname, "../logs");
+if (!fs.existsSync(logDir)) {
+  fs.mkdirSync(logDir);
+}
+
+// Format log: [timestamp] LEVEL: message
 const logFormat = format.printf(({ level, message, timestamp }) => {
   return `[${timestamp}] ${level.toUpperCase()}: ${message}`;
 });
@@ -13,17 +21,25 @@ const logger = createLogger({
     logFormat
   ),
   transports: [
-    new transports.File({
-      filename: path.join(__dirname, "../logs/error.log"),
-      level: "error",
+    // Log info dan lainnya (rotasi mingguan + zip)
+    new DailyRotateFile({
+      filename: path.join(logDir, "combined-%DATE%.log"),
+      datePattern: "YYYY-ww",       // Per minggu (ISO week)
+      zippedArchive: true,          // 🔥 Aktifkan kompresi
+      maxFiles: "4w",               // Simpan maksimal 4 minggu
     }),
-    new transports.File({
-      filename: path.join(__dirname, "../logs/combined.log"),
+    // Log khusus error (rotasi mingguan + zip)
+    new DailyRotateFile({
+      filename: path.join(logDir, "error-%DATE%.log"),
+      datePattern: "YYYY-ww",
+      zippedArchive: true,          // 🔥 Aktifkan kompresi
+      level: "error",
+      maxFiles: "4w",
     }),
   ],
 });
 
-// Tampilkan ke console juga saat dev
+// Tampilkan ke console juga saat development
 if (process.env.NODE_ENV !== "production") {
   logger.add(
     new transports.Console({

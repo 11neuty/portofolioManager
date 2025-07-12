@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 4
+    },
+    "auditLog": "D:\\RYAN\\PORTOFOLIO-MANAGER\\portofolioManager\\development\\server\\logs\\.db395bd93a4672a584b2ebb057546604e1090231-audit.json",
+    "files": [
+        {
+            "date": 1752308771299,
+            "name": "D:\\RYAN\\PORTOFOLIO-MANAGER\\portofolioManager\\development\\server\\logs\\combined-2025-28.log",
+            "hash": "96917cb2696412f96db0b20c3e197a9112adf0961bd5b21dd7a101f321b9fe49"
+        }
+    ],
+    "hashType": "sha256"
+}

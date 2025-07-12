@@ -7,6 +7,8 @@ exports.registerUser = async (req, res) => {
   try {
     const { name, email, password } = req.body;
 
+    logger.info(`[REGISTER] Attempt - name: ${name}, email: ${email}`);
+
     const exists = await User.findOne({ email });
     if (exists) {
       logger.warn(`[REGISTER] Gagal - Email sudah digunakan: ${email}`);
@@ -17,7 +19,7 @@ exports.registerUser = async (req, res) => {
     const user = new User({ name, email, password: hashedPassword });
     await user.save();
 
-    logger.info(`[REGISTER] Berhasil - User terdaftar: ${email}`);
+    logger.info(`[REGISTER] Berhasil - User terdaftar dengan email: ${email}, id: ${user._id}`);
     res.status(201).json({ msg: "User registered" });
   } catch (err) {
     logger.error(`[REGISTER ERROR] ${err.message}`);
@@ -28,6 +30,8 @@ exports.registerUser = async (req, res) => {
 exports.loginUser = async (req, res) => {
   try {
     const { email, password } = req.body;
+
+    logger.info(`[LOGIN] Attempt - email: ${email}`);
 
     const user = await User.findOne({ email });
     if (!user) {
