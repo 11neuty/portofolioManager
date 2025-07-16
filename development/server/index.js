@@ -2,9 +2,9 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const dotenv = require("dotenv");
-const logger = require("./utils/logger"); // ✅ Import custom logger
+const logger = require("./utils/logger");
 
-// Load .env variables
+// Load environment variables from .env
 dotenv.config();
 
 const app = express();
@@ -13,26 +13,35 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Routes
+// Import routes
 const userRoutes = require("./routes/userRoutes");
 const transactionRoutes = require("./routes/transactionRoutes");
 
-// Use routes
+// Register routes
 app.use("/api/users", userRoutes);
 app.use("/api/transactions", transactionRoutes);
 
-// MongoDB connection
-mongoose
-  .connect(process.env.MONGODB_URI)
-  .then(() => {
-    logger.info("✅ MongoDB connected"); // ✅ log ke file + console
+// Swagger (only on development)
+if (process.env.NODE_ENV !== "production") {
+  const { swaggerUi, swaggerSpec } = require("./swagger");
+  app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+  logger.info("📘 Swagger UI available at /api-docs");
+}
+
+// Start server only after DB connected
+const startServer = async () => {
+  try {
+    await mongoose.connect(process.env.MONGODB_URI);
+    logger.info("✅ MongoDB connected");
 
     const PORT = process.env.PORT || 5000;
     app.listen(PORT, () => {
-      logger.info(`🚀 Server running on port ${PORT}`); // ✅ log ke file + console
+      logger.info(`🚀 Server running on http://localhost:${PORT}`);
     });
-  })
-  .catch((err) => {
-    logger.error(`❌ MongoDB connection error: ${err.message}`); // ✅ log error ke file
+  } catch (err) {
+    logger.error(`❌ MongoDB connection failed: ${err.message}`);
     process.exit(1);
-  });
+  }
+};
+
+startServer();
