@@ -1,7 +1,13 @@
-/* globals.css */
+/* app/globals.css */
+
 @tailwind utilities;
 
-/* Kamu bisa tambahkan custom CSS di bawah */
 body {
-  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
