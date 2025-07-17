@@ -1,0 +1,7 @@
+/* globals.css */
+@tailwind utilities;
+
+/* Kamu bisa tambahkan custom CSS di bawah */
+body {
+  font-family: 'Inter', sans-serif;
+}

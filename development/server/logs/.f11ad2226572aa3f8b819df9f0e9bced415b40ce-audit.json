@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 4
+    },
+    "auditLog": "D:\\RYAN\\PORTOFOLIO-MANAGER\\portofolioManager\\development\\server\\logs\\.f11ad2226572aa3f8b819df9f0e9bced415b40ce-audit.json",
+    "files": [
+        {
+            "date": 1752650837642,
+            "name": "D:\\RYAN\\PORTOFOLIO-MANAGER\\portofolioManager\\development\\server\\logs\\error-2025-29.log",
+            "hash": "1f0747610f2d6140448371ce46e711c731312bbae885eb4d90301d96dfedeeeb"
+        }
+    ],
+    "hashType": "sha256"
+}

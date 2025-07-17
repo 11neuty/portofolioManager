@@ -1,18 +1,19 @@
-// src/app/layout.tsx
-import "./globals.css";
-import Sidebar from "../components/sidebar";
-import Navbar from "../components/navbar";
+import './globals.css'
+import type { ReactNode } from 'react'
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export const metadata = {
+  title: 'Portofolio Manager',
+  description: 'Track your stock performance',
+}
+
+interface RootLayoutProps {
+  children: ReactNode;
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body className="flex min-h-screen">
-        <Sidebar />
-        <div className="flex-1 flex flex-col">
-          <Navbar />
-          <main className="p-4">{children}</main>
-        </div>
-      </body>
+      <body>{children}</body>
     </html>
-  );
+  )
 }
