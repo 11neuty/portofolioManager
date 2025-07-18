@@ -33,7 +33,7 @@ export default function CreateTransactionPage() {
       });
 
       if (!res.ok) throw new Error("Gagal menambahkan transaksi");
-      router.push("/transactions");
+      router.push("/dashboard");
     } catch (error) {
       alert("Gagal menyimpan transaksi.");
     }
