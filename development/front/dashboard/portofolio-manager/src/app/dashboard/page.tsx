@@ -5,32 +5,42 @@ import Card from '@/components/card'
 
 const DashboardPage = () => {
   const [portfolio, setPortfolio] = useState<any[]>([])
-  const [stats, setStats] = useState<any>({})
-  const [token, setToken] = useState<string>('')
+  const [stats, setStats] = useState<any>(null)
   const router = useRouter()
 
   useEffect(() => {
-    const jwt = localStorage.getItem('token')
-    if (jwt) {
-      setToken(jwt)
-    } else {
-      router.push('/login')
-    }
-  }, [router])
+    const token = localStorage.getItem('token')
 
-  useEffect(() => {
-    if (!token) return
+    if (!token) {
+      router.push('/login')
+      return
+    }
 
     const fetchData = async () => {
       try {
-        const [portfolioRes, statsRes] = await Promise.all([
-          fetch('http://localhost:5000/api/transactions/portfolio-summary', {
-            headers: { Authorization: `Bearer ${token}` }
-          }),
-          fetch('http://localhost:5000/api/transactions/transaction-stats', {
-            headers: { Authorization: `Bearer ${token}` }
-          })
-        ])
+        const portfolioRes = await fetch(
+          'http://localhost:5000/api/transactions/portfolio-summary',
+          {
+            headers: {
+              Authorization: `Bearer ${token}`
+            }
+          }
+        )
+
+        const statsRes = await fetch(
+          'http://localhost:5000/api/transactions/transaction-stats',
+          {
+            headers: {
+              Authorization: `Bearer ${token}`
+            }
+          }
+        )
+
+        if (!portfolioRes.ok || !statsRes.ok) {
+          localStorage.removeItem('token')
+          router.push('/login')
+          return
+        }
 
         const portfolioData = await portfolioRes.json()
         const statsData = await statsRes.json()
@@ -38,22 +48,29 @@ const DashboardPage = () => {
         setPortfolio(portfolioData)
         setStats(statsData)
       } catch (err) {
-        console.error('Gagal mengambil data:', err)
+        console.error(err)
       }
     }
 
     fetchData()
-  }, [token])
+  }, [router])
 
   const totalPortfolioCost = portfolio.reduce(
     (acc, item) => acc + Number(item.totalCost || 0),
     0
   )
-  const assetCount = portfolio.length
 
   const handleLogout = () => {
     localStorage.removeItem('token')
     router.push('/login')
+  }
+
+  if (!stats) {
+    return (
+      <div className="p-6 bg-gray-900 min-h-screen text-white">
+        Loading...
+      </div>
+    )
   }
 
   return (
@@ -62,7 +79,7 @@ const DashboardPage = () => {
         <h1 className="text-2xl font-bold">Dashboard</h1>
         <button
           onClick={handleLogout}
-          className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded"
+          className="bg-red-600 text-white px-4 py-2 rounded"
         >
           Logout
         </button>
@@ -81,14 +98,17 @@ const DashboardPage = () => {
         />
         <Card
           title="Jumlah Aset"
-          value={`${assetCount} Aset`}
+          value={`${portfolio.length} Aset`}
           color="purple"
         />
       </div>
 
       <div className="mt-10">
-        <h2 className="text-xl font-semibold mb-4">Top 5 Saham Berdasarkan Lot</h2>
-        <table className="w-full border border-white text-white">
+        <h2 className="text-xl font-semibold mb-4">
+          Top 5 Saham Berdasarkan Lot
+        </h2>
+
+        <table className="w-full border border-white">
           <thead>
             <tr className="bg-gray-700">
               <th className="px-4 py-2 text-left">Ticker</th>
@@ -97,7 +117,7 @@ const DashboardPage = () => {
             </tr>
           </thead>
           <tbody>
-            {stats.top5StocksByLot?.map((stock: any, idx: number) => (
+            {stats.top5StocksByLot.map((stock: any, idx: number) => (
               <tr key={idx} className="border-t border-white">
                 <td className="px-4 py-2">{stock.ticker}</td>
                 <td className="px-4 py-2 text-right">{stock.totalLot}</td>

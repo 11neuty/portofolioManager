@@ -7,3 +7,312 @@
 [2025-07-17 11:32:54] INFO: 📘 Swagger UI available at /api-docs
 [2025-07-17 11:32:54] INFO: ✅ MongoDB connected
 [2025-07-17 11:32:54] INFO: 🚀 Server running on http://localhost:5000
+[2025-07-17 13:50:39] INFO: 📘 Swagger UI available at /api-docs
+[2025-07-17 13:50:39] INFO: ✅ MongoDB connected
+[2025-07-17 13:50:39] INFO: 🚀 Server running on http://localhost:5000
+[2025-07-17 13:51:45] INFO: [LOGIN] Attempt - email: glen@gmail.com
+[2025-07-17 13:51:45] INFO: [LOGIN] Berhasil - glen@gmail.com (ID: 6874bfabb02bf7b07e9c14c6)
+[2025-07-17 13:58:13] INFO: [LOGIN] Attempt - email: erik@gmail.com
+[2025-07-17 13:58:13] INFO: [LOGIN] Berhasil - erik@gmail.com (ID: 687080d49bb1d1fe0a488d22)
+[2025-07-17 14:13:54] INFO: [LOGIN] Attempt - email: sapi@gmail.com
+[2025-07-17 14:13:54] WARN: [LOGIN] Gagal - Email tidak ditemukan: sapi@gmail.com
+[2025-07-17 14:27:33] INFO: [LOGIN] Attempt - email: glen123@gmail.com
+[2025-07-17 14:27:33] WARN: [LOGIN] Gagal - Email tidak ditemukan: glen123@gmail.com
+[2025-07-17 14:29:30] INFO: [LOGIN] Attempt - email: sapi@gmail.com
+[2025-07-17 14:29:30] WARN: [LOGIN] Gagal - Email tidak ditemukan: sapi@gmail.com
+[2025-07-17 14:29:38] INFO: [LOGIN] Attempt - email: glen@gmail.com
+[2025-07-17 14:29:38] INFO: [LOGIN] Berhasil - glen@gmail.com (ID: 6874bfabb02bf7b07e9c14c6)
+[2025-07-17 14:33:14] INFO: [LOGIN] Attempt - email: glen@gmail.com
+[2025-07-17 14:33:14] INFO: [LOGIN] Berhasil - glen@gmail.com (ID: 6874bfabb02bf7b07e9c14c6)
+[2025-07-17 14:39:08] INFO: [LOGIN] Attempt - email: glen@gmail.com
+[2025-07-17 14:39:08] INFO: [LOGIN] Berhasil - glen@gmail.com (ID: 6874bfabb02bf7b07e9c14c6)
+[2025-07-17 14:42:14] INFO: [LOGIN] Attempt - email: erik1@gmail.com
+[2025-07-17 14:42:14] WARN: [LOGIN] Gagal - Email tidak ditemukan: erik1@gmail.com
+[2025-07-17 14:42:27] INFO: [LOGIN] Attempt - email: erik1@gmail.com
+[2025-07-17 14:42:27] WARN: [LOGIN] Gagal - Email tidak ditemukan: erik1@gmail.com
+[2025-07-17 14:42:31] INFO: [LOGIN] Attempt - email: erik@gmail.com
+[2025-07-17 14:42:31] INFO: [LOGIN] Berhasil - erik@gmail.com (ID: 687080d49bb1d1fe0a488d22)
+[2025-07-17 14:42:37] INFO: [LOGIN] Attempt - email: erik@gmail.com
+[2025-07-17 14:42:37] INFO: [LOGIN] Berhasil - erik@gmail.com (ID: 687080d49bb1d1fe0a488d22)
+[2025-07-17 14:51:27] INFO: [LOGIN] Attempt - email: glen@gmail.com
+[2025-07-17 14:51:27] INFO: [LOGIN] Berhasil - glen@gmail.com (ID: 6874bfabb02bf7b07e9c14c6)
+[2025-07-17 14:55:05] INFO: [LOGIN] Attempt - email: erik@gmail.com
+[2025-07-17 14:55:05] INFO: [LOGIN] Berhasil - erik@gmail.com (ID: 687080d49bb1d1fe0a488d22)
+[2025-07-17 15:13:27] INFO: [LOGIN] Attempt - email: glen@gmail.com
+[2025-07-17 15:13:27] INFO: [LOGIN] Berhasil - glen@gmail.com (ID: 6874bfabb02bf7b07e9c14c6)
+[2025-07-17 15:30:40] INFO: 📘 Swagger UI available at /api-docs
+[2025-07-17 15:30:40] INFO: ✅ MongoDB connected
+[2025-07-17 15:30:40] INFO: 🚀 Server running on http://localhost:5000
+[2025-07-17 15:32:22] INFO: [LOGIN] Attempt - email: coba@gmail.com
+[2025-07-17 15:32:22] WARN: [LOGIN] Gagal - Email tidak ditemukan: coba@gmail.com
+[2025-07-17 15:32:39] INFO: [LOGIN] Attempt - email: coba@gmail.com
+[2025-07-17 15:32:39] WARN: [LOGIN] Gagal - Email tidak ditemukan: coba@gmail.com
+[2025-07-17 15:32:49] INFO: [REGISTER] Attempt - name: undefined, email: coba@gmail.com
+[2025-07-17 15:32:49] INFO: [REGISTER] Berhasil - User terdaftar dengan email: coba@gmail.com, id: 6878b531cf074624b8ebcfcb
+[2025-07-17 15:32:54] INFO: [LOGIN] Attempt - email: coba@gmail.com
+[2025-07-17 15:32:54] INFO: [LOGIN] Berhasil - coba@gmail.com (ID: 6878b531cf074624b8ebcfcb)
+[2025-07-17 15:35:52] INFO: [LOGIN] Attempt - email: alberto@gmail.con
+[2025-07-17 15:35:52] WARN: [LOGIN] Gagal - Email tidak ditemukan: alberto@gmail.con
+[2025-07-17 15:36:07] INFO: [LOGIN] Attempt - email: alberto@gmail.con
+[2025-07-17 15:36:07] WARN: [LOGIN] Gagal - Email tidak ditemukan: alberto@gmail.con
+[2025-07-17 15:36:42] INFO: [LOGIN] Attempt - email: alberto@gmail.con
+[2025-07-17 15:36:42] WARN: [LOGIN] Gagal - Email tidak ditemukan: alberto@gmail.con
+[2025-07-17 15:40:04] INFO: [REGISTER] Attempt - name: undefined, email: alberto@gmail.com
+[2025-07-17 15:40:04] INFO: [REGISTER] Berhasil - User terdaftar dengan email: alberto@gmail.com, id: 6878b6e4cf074624b8ebcfd2
+[2025-07-17 15:40:34] INFO: [LOGIN] Attempt - email: alberto@gmail.com
+[2025-07-17 15:40:34] INFO: [LOGIN] Berhasil - alberto@gmail.com (ID: 6878b6e4cf074624b8ebcfd2)
+[2025-07-17 15:40:47] INFO: [LOGIN] Attempt - email: alberto@gmail.con
+[2025-07-17 15:40:47] WARN: [LOGIN] Gagal - Email tidak ditemukan: alberto@gmail.con
+[2025-07-17 15:42:15] INFO: [LOGIN] Attempt - email: alberto@gmail.con
+[2025-07-17 15:42:15] WARN: [LOGIN] Gagal - Email tidak ditemukan: alberto@gmail.con
+[2025-07-17 15:43:17] INFO: [LOGIN] Attempt - email: alberto@gmail.com
+[2025-07-17 15:43:17] WARN: [LOGIN] Gagal - Password salah untuk: alberto@gmail.com
+[2025-07-17 15:43:24] INFO: [LOGIN] Attempt - email: glen@gmail.com
+[2025-07-17 15:43:24] INFO: [LOGIN] Berhasil - glen@gmail.com (ID: 6874bfabb02bf7b07e9c14c6)
+[2025-07-17 15:43:52] INFO: [LOGIN] Attempt - email: glen@gmail.com
+[2025-07-17 15:43:52] INFO: [LOGIN] Berhasil - glen@gmail.com (ID: 6874bfabb02bf7b07e9c14c6)
+[2025-07-17 15:44:32] INFO: [LOGIN] Attempt - email: rafi123@gmail.com
+[2025-07-17 15:44:32] WARN: [LOGIN] Gagal - Email tidak ditemukan: rafi123@gmail.com
+[2025-07-17 15:44:47] INFO: [LOGIN] Attempt - email: rafi123@gmail.com
+[2025-07-17 15:44:47] WARN: [LOGIN] Gagal - Email tidak ditemukan: rafi123@gmail.com
+[2025-07-17 15:45:08] INFO: [REGISTER] Attempt - name: undefined, email: alberto123@gmail.com
+[2025-07-17 15:45:08] INFO: [REGISTER] Berhasil - User terdaftar dengan email: alberto123@gmail.com, id: 6878b814cf074624b8ebcfdd
+[2025-07-17 15:45:30] INFO: [LOGIN] Attempt - email: alberto123@gmail.com
+[2025-07-17 15:45:30] INFO: [LOGIN] Berhasil - alberto123@gmail.com (ID: 6878b814cf074624b8ebcfdd)
+[2025-07-17 15:45:52] INFO: [LOGIN] Attempt - email: rafi123@gmail.com
+[2025-07-17 15:45:52] WARN: [LOGIN] Gagal - Email tidak ditemukan: rafi123@gmail.com
+[2025-07-17 16:01:07] INFO: [LOGIN] Attempt - email: glen@gmail.com
+[2025-07-17 16:01:07] INFO: [LOGIN] Berhasil - glen@gmail.com (ID: 6874bfabb02bf7b07e9c14c6)
+[2025-07-17 16:19:22] INFO: [LOGIN] Attempt - email: riecaja@gmail.com
+[2025-07-17 16:19:22] WARN: [LOGIN] Gagal - Email tidak ditemukan: riecaja@gmail.com
+[2025-07-17 16:19:35] INFO: [LOGIN] Attempt - email: riecaja@gmail.com
+[2025-07-17 16:19:35] WARN: [LOGIN] Gagal - Email tidak ditemukan: riecaja@gmail.com
+[2025-07-17 16:19:59] INFO: [LOGIN] Attempt - email: riecaja@gmail.com
+[2025-07-17 16:19:59] WARN: [LOGIN] Gagal - Email tidak ditemukan: riecaja@gmail.com
+[2025-07-17 16:20:32] INFO: [LOGIN] Attempt - email: riecaja@gmail.com
+[2025-07-17 16:20:32] WARN: [LOGIN] Gagal - Email tidak ditemukan: riecaja@gmail.com
+[2025-07-17 16:25:23] INFO: [REGISTER] Attempt - name: asd, email: asd@gmail.com
+[2025-07-17 16:25:23] INFO: [REGISTER] Berhasil - User terdaftar dengan email: asd@gmail.com, id: 6878c183cf074624b8ebcfe7
+[2025-07-17 16:26:03] INFO: [LOGIN] Attempt - email: asd@gmail.com
+[2025-07-17 16:26:03] WARN: [LOGIN] Gagal - Password salah untuk: asd@gmail.com
+[2025-07-17 16:26:21] INFO: [LOGIN] Attempt - email: asd@gmail.com
+[2025-07-17 16:26:21] WARN: [LOGIN] Gagal - Password salah untuk: asd@gmail.com
+[2025-07-17 16:26:33] INFO: [LOGIN] Attempt - email: asd@sd.com
+[2025-07-17 16:26:33] WARN: [LOGIN] Gagal - Email tidak ditemukan: asd@sd.com
+[2025-07-17 16:26:45] INFO: [REGISTER] Attempt - name: lisa, email: lisa@gmail.com
+[2025-07-17 16:26:45] INFO: [REGISTER] Berhasil - User terdaftar dengan email: lisa@gmail.com, id: 6878c1d5cf074624b8ebcfed
+[2025-07-17 16:26:57] INFO: [LOGIN] Attempt - email: lisa@gmail.com
+[2025-07-17 16:26:57] INFO: [LOGIN] Berhasil - lisa@gmail.com (ID: 6878c1d5cf074624b8ebcfed)
+[2025-07-17 16:27:44] INFO: [LOGIN] Attempt - email: lisa@gmail.com
+[2025-07-17 16:27:44] INFO: [LOGIN] Berhasil - lisa@gmail.com (ID: 6878c1d5cf074624b8ebcfed)
+[2025-07-17 16:50:47] INFO: 📘 Swagger UI available at /api-docs
+[2025-07-17 16:50:47] INFO: ✅ MongoDB connected
+[2025-07-17 16:50:47] INFO: 🚀 Server running on http://localhost:5000
+[2025-07-17 16:51:56] INFO: [REGISTER] Attempt - name: Corazon, email: corazon@gmail.com
+[2025-07-17 16:51:57] INFO: [REGISTER] Berhasil - User terdaftar dengan email: corazon@gmail.com, id: 6878c7bc04512063c5c5b370
+[2025-07-17 16:52:26] INFO: [LOGIN] Attempt - email: corazon@gmail.com
+[2025-07-17 16:52:26] INFO: [LOGIN] Berhasil - corazon@gmail.com (ID: 6878c7bc04512063c5c5b370)
+[2025-07-18 09:55:26] INFO: 📘 Swagger UI available at /api-docs
+[2025-07-18 09:55:26] INFO: ✅ MongoDB connected
+[2025-07-18 09:55:26] INFO: 🚀 Server running on http://localhost:5000
+[2025-07-18 09:55:41] INFO: [LOGIN] Attempt - email: erik1@gmail.com
+[2025-07-18 09:55:41] WARN: [LOGIN] Gagal - Email tidak ditemukan: erik1@gmail.com
+[2025-07-18 09:56:39] INFO: [LOGIN] Attempt - email: erik1@gmail.com
+[2025-07-18 09:56:39] WARN: [LOGIN] Gagal - Email tidak ditemukan: erik1@gmail.com
+[2025-07-18 10:03:58] INFO: 📘 Swagger UI available at /api-docs
+[2025-07-18 10:03:58] INFO: ✅ MongoDB connected
+[2025-07-18 10:03:58] INFO: 🚀 Server running on http://localhost:5000
+[2025-07-18 10:12:15] INFO: 📘 Swagger UI available at /api-docs
+[2025-07-18 10:12:15] INFO: ✅ MongoDB connected
+[2025-07-18 10:12:15] INFO: 🚀 Server running on http://localhost:5000
+[2025-07-18 10:12:42] INFO: 📘 Swagger UI available at /api-docs
+[2025-07-18 10:12:42] INFO: ✅ MongoDB connected
+[2025-07-18 10:12:42] INFO: 🚀 Server running on http://localhost:5000
+[2025-07-18 10:19:23] INFO: 📘 Swagger UI available at /api-docs
+[2025-07-18 10:19:23] INFO: ✅ MongoDB connected
+[2025-07-18 10:19:23] INFO: 🚀 Server running on http://localhost:5000
+[2025-07-18 10:22:15] INFO: 📘 Swagger UI available at /api-docs
+[2025-07-18 10:22:15] INFO: ✅ MongoDB connected
+[2025-07-18 10:22:15] INFO: 🚀 Server running on http://localhost:5000
+[2025-07-18 10:35:51] INFO: 📘 Swagger UI available at /api-docs
+[2025-07-18 10:35:51] INFO: ✅ MongoDB connected
+[2025-07-18 10:35:51] INFO: 🚀 Server running on http://localhost:5000
+[2025-07-18 10:42:06] INFO: 📘 Swagger UI available at /api-docs
+[2025-07-18 10:42:06] INFO: ✅ MongoDB connected
+[2025-07-18 10:42:06] INFO: 🚀 Server running on http://localhost:5000
+[2025-07-18 10:42:22] INFO: 📘 Swagger UI available at /api-docs
+[2025-07-18 10:42:22] INFO: ✅ MongoDB connected
+[2025-07-18 10:42:22] INFO: 🚀 Server running on http://localhost:5000
+[2025-07-18 10:43:16] INFO: [GET USERS] 14 users retrieved
+[2025-07-18 10:44:18] INFO: [LOGIN] Attempt - email: erik1@gmail.com
+[2025-07-18 10:44:18] WARN: [LOGIN] Gagal - Email tidak ditemukan: erik1@gmail.com
+[2025-07-18 10:44:37] INFO: [LOGIN] Attempt - email: erik@gmail.com
+[2025-07-18 10:44:37] INFO: [LOGIN] Berhasil - erik@gmail.com (ID: 687080d49bb1d1fe0a488d22)
+[2025-07-18 10:44:50] INFO: [LOGIN] Attempt - email: erik@gmail.com
+[2025-07-18 10:44:51] INFO: [LOGIN] Berhasil - erik@gmail.com (ID: 687080d49bb1d1fe0a488d22)
+[2025-07-18 10:52:26] INFO: [LOGIN] Attempt - email: ryan@gmail.com
+[2025-07-18 10:52:26] INFO: [LOGIN] Berhasil - ryan@gmail.com (ID: 6872099db238c17861d173ca)
+[2025-07-18 10:53:56] INFO: [LOGIN] Attempt - email: ryan@gmail.com
+[2025-07-18 10:53:56] INFO: [LOGIN] Berhasil - ryan@gmail.com (ID: 6872099db238c17861d173ca)
+[2025-07-18 11:05:12] INFO: [LOGIN] Attempt - email: ryan@gmail.com
+[2025-07-18 11:05:12] INFO: [LOGIN] Berhasil - ryan@gmail.com (ID: 6872099db238c17861d173ca)
+[2025-07-18 11:05:20] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 11:05:20] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 11:05:30] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 11:05:33] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 11:05:36] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 11:05:38] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 11:23:59] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 11:23:59] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 11:24:05] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 11:25:30] INFO: 📘 Swagger UI available at /api-docs
+[2025-07-18 11:25:30] INFO: ✅ MongoDB connected
+[2025-07-18 11:25:30] INFO: 🚀 Server running on http://localhost:5000
+[2025-07-18 11:26:15] INFO: [LOGIN] Attempt - email: erik@gmail.com
+[2025-07-18 11:26:15] INFO: [LOGIN] Berhasil - erik@gmail.com (ID: 687080d49bb1d1fe0a488d22)
+[2025-07-18 11:26:49] INFO: [CREATE] Transaksi ditambahkan oleh user 687080d49bb1d1fe0a488d22: {"userId":"687080d49bb1d1fe0a488d22","ticker":"BBNI","type":"buy","lot":2,"price":4500,"date":"2025-07-18T00:00:00.000Z","_id":"6879cd09f4c846adde384a35","__v":0}
+[2025-07-18 14:14:18] INFO: 📘 Swagger UI available at /api-docs
+[2025-07-18 14:14:18] INFO: ✅ MongoDB connected
+[2025-07-18 14:14:18] INFO: 🚀 Server running on http://localhost:5000
+[2025-07-18 14:15:48] INFO: [LOGIN] Attempt - email: ryan@gmail.com
+[2025-07-18 14:15:48] INFO: [LOGIN] Berhasil - ryan@gmail.com (ID: 6872099db238c17861d173ca)
+[2025-07-18 14:22:04] INFO: [LOGIN] Attempt - email: ryan@gmail.com
+[2025-07-18 14:22:04] INFO: [LOGIN] Berhasil - ryan@gmail.com (ID: 6872099db238c17861d173ca)
+[2025-07-18 14:49:05] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 14:49:05] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 14:51:21] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 14:51:24] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:01:51] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:01:54] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:01:54] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 15:01:54] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:01:54] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 15:02:00] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:02:00] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 15:05:04] INFO: [LOGIN] Attempt - email: erik@gmail.com
+[2025-07-18 15:05:04] INFO: [LOGIN] Berhasil - erik@gmail.com (ID: 687080d49bb1d1fe0a488d22)
+[2025-07-18 15:06:36] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 687080d49bb1d1fe0a488d22
+[2025-07-18 15:07:20] INFO: [TRANSACTION STATS] Statistik transaksi user 687080d49bb1d1fe0a488d22
+[2025-07-18 15:09:53] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:09:53] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 15:10:05] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:10:05] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 15:12:24] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:12:24] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 15:12:26] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:12:26] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 15:12:27] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:12:27] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 15:12:31] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:12:31] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 15:12:33] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:12:33] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 15:12:35] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:12:35] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 15:12:39] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:12:39] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 15:12:58] INFO: [CREATE] Transaksi ditambahkan oleh user 6872099db238c17861d173ca: {"userId":"6872099db238c17861d173ca","ticker":"BBRI","type":"buy","lot":1000,"price":4200,"date":"2025-07-18T00:00:00.000Z","_id":"687a020a949e0e1fc8d1f304","__v":0}
+[2025-07-18 15:13:58] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:13:58] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 15:20:09] INFO: [CREATE] Transaksi ditambahkan oleh user 6872099db238c17861d173ca: {"userId":"6872099db238c17861d173ca","ticker":"BBRI","type":"sell","lot":100,"price":4500,"date":"2025-07-18T00:00:00.000Z","_id":"687a03b9949e0e1fc8d1f308","__v":0}
+[2025-07-18 15:20:09] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:20:09] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 15:20:19] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:20:19] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 15:20:32] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:20:32] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 15:20:56] INFO: [CREATE] Transaksi ditambahkan oleh user 6872099db238c17861d173ca: {"userId":"6872099db238c17861d173ca","ticker":"BBRI","type":"buy","lot":1000,"price":4200,"date":"2025-07-18T00:00:00.000Z","_id":"687a03e8949e0e1fc8d1f310","__v":0}
+[2025-07-18 15:20:56] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:20:56] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 15:21:09] INFO: [CREATE] Transaksi ditambahkan oleh user 6872099db238c17861d173ca: {"userId":"6872099db238c17861d173ca","ticker":"BBRI","type":"sell","lot":1000,"price":4200,"date":"2025-07-18T00:00:00.000Z","_id":"687a03f5949e0e1fc8d1f314","__v":0}
+[2025-07-18 15:21:09] INFO: [CREATE] Transaksi ditambahkan oleh user 6872099db238c17861d173ca: {"userId":"6872099db238c17861d173ca","ticker":"BBRI","type":"sell","lot":1000,"price":4200,"date":"2025-07-18T00:00:00.000Z","_id":"687a03f5949e0e1fc8d1f316","__v":0}
+[2025-07-18 15:21:10] INFO: [CREATE] Transaksi ditambahkan oleh user 6872099db238c17861d173ca: {"userId":"6872099db238c17861d173ca","ticker":"BBRI","type":"sell","lot":1000,"price":4200,"date":"2025-07-18T00:00:00.000Z","_id":"687a03f6949e0e1fc8d1f318","__v":0}
+[2025-07-18 15:21:10] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:21:10] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 15:22:08] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 687080d49bb1d1fe0a488d22
+[2025-07-18 15:22:12] INFO: [GET USERS] 14 users retrieved
+[2025-07-18 15:23:08] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:23:08] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 15:33:08] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:33:08] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 15:38:01] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:38:01] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 15:38:35] INFO: [LOGIN] Attempt - email: ryan@gmail.com
+[2025-07-18 15:38:35] INFO: [LOGIN] Berhasil - ryan@gmail.com (ID: 6872099db238c17861d173ca)
+[2025-07-18 15:38:35] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:38:35] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 15:42:57] INFO: [LOGIN] Attempt - email: ryan@gmail.com
+[2025-07-18 15:42:57] INFO: [LOGIN] Berhasil - ryan@gmail.com (ID: 6872099db238c17861d173ca)
+[2025-07-18 15:42:57] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:42:57] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 15:45:00] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:45:00] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 15:46:58] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:46:58] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 15:52:24] INFO: 📘 Swagger UI available at /api-docs
+[2025-07-18 15:52:24] INFO: ✅ MongoDB connected
+[2025-07-18 15:52:24] INFO: 🚀 Server running on http://localhost:5000
+[2025-07-18 15:53:13] INFO: 📘 Swagger UI available at /api-docs
+[2025-07-18 15:53:13] INFO: ✅ MongoDB connected
+[2025-07-18 15:53:13] INFO: 🚀 Server running on http://localhost:5000
+[2025-07-18 15:53:33] INFO: 📘 Swagger UI available at /api-docs
+[2025-07-18 15:53:33] INFO: ✅ MongoDB connected
+[2025-07-18 15:53:33] INFO: 🚀 Server running on http://localhost:5000
+[2025-07-18 15:54:28] INFO: [CREATE] Transaksi ditambahkan oleh user 6872099db238c17861d173ca: {"userId":"6872099db238c17861d173ca","ticker":"BBRI","type":"buy","lot":2,"price":4500,"date":"2025-07-18T00:00:00.000Z","_id":"687a0bc413145765a5003373","__v":0}
+[2025-07-18 15:54:28] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 15:54:28] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 16:05:12] INFO: [CREATE] Transaksi ditambahkan oleh user 6872099db238c17861d173ca: {"userId":"6872099db238c17861d173ca","ticker":"BBRI","type":"buy","lot":2,"price":4500,"date":"2025-07-18T00:00:00.000Z","_id":"687a0e4813145765a5003377","__v":0}
+[2025-07-18 16:05:13] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 16:05:13] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 16:07:06] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 16:07:06] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 16:07:09] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 16:07:09] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 16:07:21] INFO: [CREATE] Transaksi ditambahkan oleh user 6872099db238c17861d173ca: {"userId":"6872099db238c17861d173ca","ticker":"BBRI","type":"buy","lot":2,"price":4500,"date":"2025-07-18T00:00:00.000Z","_id":"687a0ec913145765a500337f","__v":0}
+[2025-07-18 16:07:21] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 16:07:21] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 16:07:30] INFO: [LOGIN] Attempt - email: ryan@gmail.com
+[2025-07-18 16:07:30] INFO: [LOGIN] Berhasil - ryan@gmail.com (ID: 6872099db238c17861d173ca)
+[2025-07-18 16:07:30] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 16:07:30] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 16:09:24] INFO: [LOGIN] Attempt - email: ryan@gmail.com
+[2025-07-18 16:09:24] INFO: [LOGIN] Berhasil - ryan@gmail.com (ID: 6872099db238c17861d173ca)
+[2025-07-18 16:09:25] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 16:09:25] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 16:09:39] INFO: [CREATE] Transaksi ditambahkan oleh user 6872099db238c17861d173ca: {"userId":"6872099db238c17861d173ca","ticker":"BBRI","type":"buy","lot":2,"price":4500,"date":"2025-07-18T00:00:00.000Z","_id":"687a0f5313145765a5003389","__v":0}
+[2025-07-18 16:09:39] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 16:09:39] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 16:10:00] INFO: [CREATE] Transaksi ditambahkan oleh user 6872099db238c17861d173ca: {"userId":"6872099db238c17861d173ca","ticker":"BBRI","type":"sell","lot":2,"price":4200,"date":"2025-07-18T00:00:00.000Z","_id":"687a0f6813145765a500338d","__v":0}
+[2025-07-18 16:10:00] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 16:10:00] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 16:17:47] INFO: [LOGIN] Attempt - email: ryan@gmail.com
+[2025-07-18 16:17:48] INFO: [LOGIN] Berhasil - ryan@gmail.com (ID: 6872099db238c17861d173ca)
+[2025-07-18 16:17:48] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 16:17:48] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 16:18:02] INFO: [CREATE] Transaksi ditambahkan oleh user 6872099db238c17861d173ca: {"userId":"6872099db238c17861d173ca","ticker":"PTBA","type":"buy","lot":100,"price":2300,"date":"2025-07-18T00:00:00.000Z","_id":"687a114a13145765a5003394","__v":0}
+[2025-07-18 16:18:02] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-18 16:18:02] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-18 16:19:34] INFO: [LOGIN] Attempt - email: erik@gmail.com
+[2025-07-18 16:19:35] INFO: [LOGIN] Berhasil - erik@gmail.com (ID: 687080d49bb1d1fe0a488d22)
+[2025-07-18 16:19:35] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 687080d49bb1d1fe0a488d22
+[2025-07-18 16:19:35] INFO: [TRANSACTION STATS] Statistik transaksi user 687080d49bb1d1fe0a488d22
+[2025-07-18 16:19:43] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 687080d49bb1d1fe0a488d22
+[2025-07-18 16:19:43] INFO: [TRANSACTION STATS] Statistik transaksi user 687080d49bb1d1fe0a488d22
+[2025-07-18 16:19:48] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 687080d49bb1d1fe0a488d22
+[2025-07-18 16:19:48] INFO: [TRANSACTION STATS] Statistik transaksi user 687080d49bb1d1fe0a488d22
+[2025-07-18 16:24:34] INFO: [CREATE] Transaksi ditambahkan oleh user 687080d49bb1d1fe0a488d22: {"userId":"687080d49bb1d1fe0a488d22","ticker":"WIRG","type":"buy","lot":100,"price":2300,"date":"2025-07-18T00:00:00.000Z","_id":"687a12d213145765a500339f","__v":0}
+[2025-07-18 16:24:34] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 687080d49bb1d1fe0a488d22
+[2025-07-18 16:24:34] INFO: [TRANSACTION STATS] Statistik transaksi user 687080d49bb1d1fe0a488d22
+[2025-07-18 16:33:03] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 687080d49bb1d1fe0a488d22
+[2025-07-18 16:33:03] INFO: [TRANSACTION STATS] Statistik transaksi user 687080d49bb1d1fe0a488d22
+[2025-07-18 16:35:52] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 687080d49bb1d1fe0a488d22
+[2025-07-18 16:35:52] INFO: [TRANSACTION STATS] Statistik transaksi user 687080d49bb1d1fe0a488d22
+[2025-07-18 16:39:56] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 687080d49bb1d1fe0a488d22
+[2025-07-18 16:39:56] INFO: [TRANSACTION STATS] Statistik transaksi user 687080d49bb1d1fe0a488d22
+[2025-07-18 16:40:04] INFO: [LOGIN] Attempt - email: erik@gmail.com
+[2025-07-18 16:40:05] INFO: [LOGIN] Berhasil - erik@gmail.com (ID: 687080d49bb1d1fe0a488d22)
+[2025-07-18 16:40:05] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 687080d49bb1d1fe0a488d22
+[2025-07-18 16:40:05] INFO: [TRANSACTION STATS] Statistik transaksi user 687080d49bb1d1fe0a488d22
+[2025-07-18 16:40:33] INFO: [CREATE] Transaksi ditambahkan oleh user 687080d49bb1d1fe0a488d22: {"userId":"687080d49bb1d1fe0a488d22","ticker":"BBRI","type":"sell","lot":2,"price":4500,"date":null,"_id":"687a169113145765a50033ac","__v":0}
+[2025-07-18 16:40:33] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 687080d49bb1d1fe0a488d22
+[2025-07-18 16:40:33] INFO: [TRANSACTION STATS] Statistik transaksi user 687080d49bb1d1fe0a488d22

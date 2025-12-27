@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { registerUser, loginUser } = require("../controllers/userController");
+const { registerUser, loginUser, getAllUsers } = require("../controllers/userController");
 
 /**
  * @swagger
@@ -16,11 +16,11 @@ const { registerUser, loginUser } = require("../controllers/userController");
  *     UserRegister:
  *       type: object
  *       required:
- *         - username
+ *         - name
  *         - email
  *         - password
  *       properties:
- *         username:
+ *         name:
  *           type: string
  *           example: ryan123
  *         email:
@@ -54,7 +54,7 @@ const { registerUser, loginUser } = require("../controllers/userController");
  *           properties:
  *             _id:
  *               type: string
- *             username:
+ *             name:
  *               type: string
  *             email:
  *               type: string
@@ -107,5 +107,30 @@ router.post("/register", registerUser);
  *         description: Email atau password salah
  */
 router.post("/login", loginUser);
+
+/**
+ * @swagger
+ * /users:
+ *   get:
+ *     summary: Ambil semua pengguna
+ *     tags: [Users]
+ *     responses:
+ *       200:
+ *         description: Daftar user berhasil diambil
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 type: object
+ *                 properties:
+ *                   _id:
+ *                     type: string
+ *                   name:
+ *                     type: string
+ *                   email:
+ *                     type: string
+ */
+router.get("/", getAllUsers);
 
 module.exports = router;

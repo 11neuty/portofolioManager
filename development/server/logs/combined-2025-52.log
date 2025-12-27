@@ -1,0 +1,189 @@
+[2025-12-27 13:34:28] INFO: 📘 Swagger UI available at /api-docs
+[2025-12-27 13:34:28] INFO: ✅ MongoDB connected
+[2025-12-27 13:34:28] INFO: 🚀 Server running on http://localhost:5000
+[2025-12-27 13:35:46] INFO: 📘 Swagger UI available at /api-docs
+[2025-12-27 13:35:46] INFO: ✅ MongoDB connected
+[2025-12-27 13:35:46] INFO: 🚀 Server running on http://localhost:5000
+[2025-12-27 13:56:20] INFO: 📘 Swagger UI available at /api-docs
+[2025-12-27 13:56:20] INFO: ✅ MongoDB connected
+[2025-12-27 13:56:20] INFO: 🚀 Server running on http://localhost:5000
+[2025-12-27 14:04:51] INFO: 📘 Swagger UI available at /api-docs
+[2025-12-27 14:04:51] INFO: ✅ MongoDB connected
+[2025-12-27 14:04:51] INFO: 🚀 Server running on http://localhost:5000
+[2025-12-27 14:04:56] INFO: [REGISTER] Attempt - name: abel, email: abel@gmail.com
+[2025-12-27 14:04:56] INFO: [REGISTER] Berhasil - User terdaftar dengan email: abel@gmail.com, id: 694f851814bae66a4db54742
+[2025-12-27 14:05:06] INFO: [LOGIN] Attempt - email: abel@gmail.com
+[2025-12-27 14:05:06] INFO: [LOGIN] Berhasil - abel@gmail.com (ID: 694f851814bae66a4db54742)
+[2025-12-27 14:05:09] INFO: [LOGIN] Attempt - email: abel@gmail.com
+[2025-12-27 14:05:09] INFO: [LOGIN] Berhasil - abel@gmail.com (ID: 694f851814bae66a4db54742)
+[2025-12-27 14:05:10] INFO: [LOGIN] Attempt - email: abel@gmail.com
+[2025-12-27 14:05:10] INFO: [LOGIN] Berhasil - abel@gmail.com (ID: 694f851814bae66a4db54742)
+[2025-12-27 14:05:10] INFO: [LOGIN] Attempt - email: abel@gmail.com
+[2025-12-27 14:05:10] INFO: [LOGIN] Berhasil - abel@gmail.com (ID: 694f851814bae66a4db54742)
+[2025-12-27 14:05:11] INFO: [LOGIN] Attempt - email: abel@gmail.com
+[2025-12-27 14:05:11] INFO: [LOGIN] Berhasil - abel@gmail.com (ID: 694f851814bae66a4db54742)
+[2025-12-27 14:05:14] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f851814bae66a4db54742
+[2025-12-27 14:05:14] INFO: [TRANSACTION STATS] Statistik transaksi user 694f851814bae66a4db54742
+[2025-12-27 14:06:45] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f851814bae66a4db54742
+[2025-12-27 14:06:45] INFO: [TRANSACTION STATS] Statistik transaksi user 694f851814bae66a4db54742
+[2025-12-27 14:07:24] INFO: [CREATE] Transaksi ditambahkan oleh user 694f851814bae66a4db54742: {"userId":"694f851814bae66a4db54742","ticker":"TINS","type":"buy","lot":10,"price":3370,"date":"2025-12-25T00:00:00.000Z","_id":"694f85ac14bae66a4db5474d","__v":0}
+[2025-12-27 14:07:24] INFO: [TRANSACTION STATS] Statistik transaksi user 694f851814bae66a4db54742
+[2025-12-27 14:07:24] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f851814bae66a4db54742
+[2025-12-27 14:07:38] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f851814bae66a4db54742
+[2025-12-27 14:07:38] INFO: [TRANSACTION STATS] Statistik transaksi user 694f851814bae66a4db54742
+[2025-12-27 14:07:49] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f851814bae66a4db54742
+[2025-12-27 14:07:49] INFO: [TRANSACTION STATS] Statistik transaksi user 694f851814bae66a4db54742
+[2025-12-27 14:08:16] INFO: [CREATE] Transaksi ditambahkan oleh user 694f851814bae66a4db54742: {"userId":"694f851814bae66a4db54742","ticker":"TINS","type":"sell","lot":9,"price":3500,"date":"2025-12-27T00:00:00.000Z","_id":"694f85e014bae66a4db54755","__v":0}
+[2025-12-27 14:08:16] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f851814bae66a4db54742
+[2025-12-27 14:08:16] INFO: [TRANSACTION STATS] Statistik transaksi user 694f851814bae66a4db54742
+[2025-12-27 14:09:07] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f851814bae66a4db54742
+[2025-12-27 14:09:07] INFO: [TRANSACTION STATS] Statistik transaksi user 694f851814bae66a4db54742
+[2025-12-27 14:09:11] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f851814bae66a4db54742
+[2025-12-27 14:09:11] INFO: [TRANSACTION STATS] Statistik transaksi user 694f851814bae66a4db54742
+[2025-12-27 14:09:26] INFO: [LOGIN] Attempt - email: abel@gmail.com
+[2025-12-27 14:09:26] INFO: [LOGIN] Berhasil - abel@gmail.com (ID: 694f851814bae66a4db54742)
+[2025-12-27 14:09:26] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f851814bae66a4db54742
+[2025-12-27 14:09:26] INFO: [TRANSACTION STATS] Statistik transaksi user 694f851814bae66a4db54742
+[2025-12-27 14:09:41] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f851814bae66a4db54742
+[2025-12-27 14:09:41] INFO: [TRANSACTION STATS] Statistik transaksi user 694f851814bae66a4db54742
+[2025-12-27 14:12:09] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f851814bae66a4db54742
+[2025-12-27 14:12:09] INFO: [TRANSACTION STATS] Statistik transaksi user 694f851814bae66a4db54742
+[2025-12-27 14:12:13] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f851814bae66a4db54742
+[2025-12-27 14:12:13] INFO: [TRANSACTION STATS] Statistik transaksi user 694f851814bae66a4db54742
+[2025-12-27 14:29:58] INFO: 📘 Swagger UI available at /api-docs
+[2025-12-27 14:29:58] INFO: ✅ MongoDB connected
+[2025-12-27 14:29:58] INFO: 🚀 Server running on http://localhost:5000
+[2025-12-27 14:31:42] INFO: [LOGIN] Attempt - email: abel@gmail.com
+[2025-12-27 14:31:43] INFO: [LOGIN] Berhasil - abel@gmail.com (ID: 694f851814bae66a4db54742)
+[2025-12-27 14:31:43] ERROR: [PORTFOLIO SUMMARY ERROR] Cannot access 'summary' before initialization
+[2025-12-27 14:31:43] INFO: [TRANSACTION STATS] Statistik transaksi user 694f851814bae66a4db54742
+[2025-12-27 14:31:54] ERROR: [PORTFOLIO SUMMARY ERROR] Cannot access 'summary' before initialization
+[2025-12-27 14:31:54] INFO: [TRANSACTION STATS] Statistik transaksi user 694f851814bae66a4db54742
+[2025-12-27 14:32:23] INFO: 📘 Swagger UI available at /api-docs
+[2025-12-27 14:32:23] INFO: ✅ MongoDB connected
+[2025-12-27 14:32:23] INFO: 🚀 Server running on http://localhost:5000
+[2025-12-27 14:32:52] ERROR: [PORTFOLIO SUMMARY ERROR] Cannot access 'summary' before initialization
+[2025-12-27 14:32:52] INFO: [TRANSACTION STATS] Statistik transaksi user 694f851814bae66a4db54742
+[2025-12-27 14:34:46] ERROR: [PORTFOLIO SUMMARY ERROR] Cannot access 'summary' before initialization
+[2025-12-27 14:34:46] INFO: [TRANSACTION STATS] Statistik transaksi user 694f851814bae66a4db54742
+[2025-12-27 14:36:49] ERROR: [PORTFOLIO SUMMARY ERROR] Cannot access 'summary' before initialization
+[2025-12-27 14:36:49] INFO: [TRANSACTION STATS] Statistik transaksi user 694f851814bae66a4db54742
+[2025-12-27 14:37:05] INFO: [LOGIN] Attempt - email: abel@gmail.com
+[2025-12-27 14:37:05] INFO: [LOGIN] Berhasil - abel@gmail.com (ID: 694f851814bae66a4db54742)
+[2025-12-27 14:37:05] ERROR: [PORTFOLIO SUMMARY ERROR] Cannot access 'summary' before initialization
+[2025-12-27 14:37:05] ERROR: [PORTFOLIO SUMMARY ERROR] Cannot access 'summary' before initialization
+[2025-12-27 14:37:05] INFO: [TRANSACTION STATS] Statistik transaksi user 694f851814bae66a4db54742
+[2025-12-27 14:37:05] INFO: [TRANSACTION STATS] Statistik transaksi user 694f851814bae66a4db54742
+[2025-12-27 14:37:15] INFO: [LOGIN] Attempt - email: abel@gmail.com
+[2025-12-27 14:37:15] INFO: [LOGIN] Berhasil - abel@gmail.com (ID: 694f851814bae66a4db54742)
+[2025-12-27 14:37:15] ERROR: [PORTFOLIO SUMMARY ERROR] Cannot access 'summary' before initialization
+[2025-12-27 14:37:15] ERROR: [PORTFOLIO SUMMARY ERROR] Cannot access 'summary' before initialization
+[2025-12-27 14:37:15] INFO: [TRANSACTION STATS] Statistik transaksi user 694f851814bae66a4db54742
+[2025-12-27 14:37:15] INFO: [TRANSACTION STATS] Statistik transaksi user 694f851814bae66a4db54742
+[2025-12-27 14:37:53] INFO: [REGISTER] Attempt - name: rubik, email: rubik@gmail.com
+[2025-12-27 14:37:53] INFO: [REGISTER] Berhasil - User terdaftar dengan email: rubik@gmail.com, id: 694f8cd1f212d175d774e3ba
+[2025-12-27 14:38:01] INFO: [LOGIN] Attempt - email: rubik@gmail.com
+[2025-12-27 14:38:01] INFO: [LOGIN] Berhasil - rubik@gmail.com (ID: 694f8cd1f212d175d774e3ba)
+[2025-12-27 14:38:02] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f8cd1f212d175d774e3ba
+[2025-12-27 14:38:02] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f8cd1f212d175d774e3ba
+[2025-12-27 14:38:02] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8cd1f212d175d774e3ba
+[2025-12-27 14:38:02] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8cd1f212d175d774e3ba
+[2025-12-27 14:38:56] INFO: [CREATE] Transaksi ditambahkan oleh user 694f8cd1f212d175d774e3ba: {"userId":"694f8cd1f212d175d774e3ba","ticker":"TINS","type":"buy","lot":10,"price":3268,"date":"2025-12-01T00:00:00.000Z","_id":"694f8d10f212d175d774e3c1","__v":0}
+[2025-12-27 14:38:56] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f8cd1f212d175d774e3ba
+[2025-12-27 14:38:56] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f8cd1f212d175d774e3ba
+[2025-12-27 14:38:56] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8cd1f212d175d774e3ba
+[2025-12-27 14:38:56] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8cd1f212d175d774e3ba
+[2025-12-27 14:39:23] INFO: [CREATE] Transaksi ditambahkan oleh user 694f8cd1f212d175d774e3ba: {"userId":"694f8cd1f212d175d774e3ba","ticker":"TINS","type":"sell","lot":1,"price":3500,"date":"2025-12-27T00:00:00.000Z","_id":"694f8d2bf212d175d774e3c7","__v":0}
+[2025-12-27 14:39:23] ERROR: [PORTFOLIO SUMMARY ERROR] Cannot access 'summary' before initialization
+[2025-12-27 14:39:23] ERROR: [PORTFOLIO SUMMARY ERROR] Cannot access 'summary' before initialization
+[2025-12-27 14:39:23] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8cd1f212d175d774e3ba
+[2025-12-27 14:39:23] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8cd1f212d175d774e3ba
+[2025-12-27 14:39:40] INFO: [LOGIN] Attempt - email: rubik@gmail.com
+[2025-12-27 14:39:41] INFO: [LOGIN] Berhasil - rubik@gmail.com (ID: 694f8cd1f212d175d774e3ba)
+[2025-12-27 14:39:42] ERROR: [PORTFOLIO SUMMARY ERROR] Cannot access 'summary' before initialization
+[2025-12-27 14:39:42] ERROR: [PORTFOLIO SUMMARY ERROR] Cannot access 'summary' before initialization
+[2025-12-27 14:39:42] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8cd1f212d175d774e3ba
+[2025-12-27 14:39:42] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8cd1f212d175d774e3ba
+[2025-12-27 14:43:32] INFO: [LOGIN] Attempt - email: rubik@gmail.com
+[2025-12-27 14:43:32] INFO: [LOGIN] Berhasil - rubik@gmail.com (ID: 694f8cd1f212d175d774e3ba)
+[2025-12-27 14:43:32] ERROR: [PORTFOLIO SUMMARY ERROR] Cannot access 'summary' before initialization
+[2025-12-27 14:43:32] ERROR: [PORTFOLIO SUMMARY ERROR] Cannot access 'summary' before initialization
+[2025-12-27 14:43:32] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8cd1f212d175d774e3ba
+[2025-12-27 14:43:32] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8cd1f212d175d774e3ba
+[2025-12-27 14:43:42] INFO: [LOGIN] Attempt - email: abel@gmail.com
+[2025-12-27 14:43:42] INFO: [LOGIN] Berhasil - abel@gmail.com (ID: 694f851814bae66a4db54742)
+[2025-12-27 14:43:42] ERROR: [PORTFOLIO SUMMARY ERROR] Cannot access 'summary' before initialization
+[2025-12-27 14:43:42] ERROR: [PORTFOLIO SUMMARY ERROR] Cannot access 'summary' before initialization
+[2025-12-27 14:43:42] INFO: [TRANSACTION STATS] Statistik transaksi user 694f851814bae66a4db54742
+[2025-12-27 14:43:42] INFO: [TRANSACTION STATS] Statistik transaksi user 694f851814bae66a4db54742
+[2025-12-27 14:43:55] INFO: [REGISTER] Attempt - name: lampu, email: lampu@gmail.com
+[2025-12-27 14:43:55] INFO: [REGISTER] Berhasil - User terdaftar dengan email: lampu@gmail.com, id: 694f8e3bf212d175d774e3dd
+[2025-12-27 14:44:03] INFO: [LOGIN] Attempt - email: lampu@gmail.com
+[2025-12-27 14:44:03] INFO: [LOGIN] Berhasil - lampu@gmail.com (ID: 694f8e3bf212d175d774e3dd)
+[2025-12-27 14:44:03] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f8e3bf212d175d774e3dd
+[2025-12-27 14:44:03] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f8e3bf212d175d774e3dd
+[2025-12-27 14:44:03] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8e3bf212d175d774e3dd
+[2025-12-27 14:44:03] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8e3bf212d175d774e3dd
+[2025-12-27 14:44:24] INFO: [CREATE] Transaksi ditambahkan oleh user 694f8e3bf212d175d774e3dd: {"userId":"694f8e3bf212d175d774e3dd","ticker":"TINS","type":"buy","lot":10,"price":1000,"date":"2025-12-12T00:00:00.000Z","_id":"694f8e58f212d175d774e3e4","__v":0}
+[2025-12-27 14:44:24] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f8e3bf212d175d774e3dd
+[2025-12-27 14:44:24] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f8e3bf212d175d774e3dd
+[2025-12-27 14:44:24] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8e3bf212d175d774e3dd
+[2025-12-27 14:44:24] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8e3bf212d175d774e3dd
+[2025-12-27 14:44:38] INFO: [CREATE] Transaksi ditambahkan oleh user 694f8e3bf212d175d774e3dd: {"userId":"694f8e3bf212d175d774e3dd","ticker":"TINS","type":"sell","lot":9,"price":1500,"date":"2025-12-26T00:00:00.000Z","_id":"694f8e66f212d175d774e3ea","__v":0}
+[2025-12-27 14:44:38] ERROR: [PORTFOLIO SUMMARY ERROR] Cannot access 'summary' before initialization
+[2025-12-27 14:44:38] ERROR: [PORTFOLIO SUMMARY ERROR] Cannot access 'summary' before initialization
+[2025-12-27 14:44:38] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8e3bf212d175d774e3dd
+[2025-12-27 14:44:38] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8e3bf212d175d774e3dd
+[2025-12-27 14:50:35] INFO: 📘 Swagger UI available at /api-docs
+[2025-12-27 14:50:35] INFO: ✅ MongoDB connected
+[2025-12-27 14:50:35] INFO: 🚀 Server running on http://localhost:5000
+[2025-12-27 14:50:48] INFO: [LOGIN] Attempt - email: rubik@gmail.com
+[2025-12-27 14:50:48] INFO: [LOGIN] Berhasil - rubik@gmail.com (ID: 694f8cd1f212d175d774e3ba)
+[2025-12-27 14:50:48] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f8cd1f212d175d774e3ba
+[2025-12-27 14:50:48] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f8cd1f212d175d774e3ba
+[2025-12-27 14:50:48] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8cd1f212d175d774e3ba
+[2025-12-27 14:50:48] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8cd1f212d175d774e3ba
+[2025-12-27 14:51:03] INFO: [CREATE] Transaksi ditambahkan oleh user 694f8cd1f212d175d774e3ba: {"userId":"694f8cd1f212d175d774e3ba","ticker":"TINS","type":"sell","lot":1,"price":3500,"date":"2025-12-27T00:00:00.000Z","_id":"694f8fe71e585b4c6bd7aa13","__v":0}
+[2025-12-27 14:51:03] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f8cd1f212d175d774e3ba
+[2025-12-27 14:51:03] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f8cd1f212d175d774e3ba
+[2025-12-27 14:51:03] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8cd1f212d175d774e3ba
+[2025-12-27 14:51:03] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8cd1f212d175d774e3ba
+[2025-12-27 14:51:20] INFO: [REGISTER] Attempt - name: key, email: key@gmail.com
+[2025-12-27 14:51:20] INFO: [REGISTER] Berhasil - User terdaftar dengan email: key@gmail.com, id: 694f8ff81e585b4c6bd7aa1a
+[2025-12-27 14:51:28] INFO: [LOGIN] Attempt - email: key@gmail.com
+[2025-12-27 14:51:28] INFO: [LOGIN] Berhasil - key@gmail.com (ID: 694f8ff81e585b4c6bd7aa1a)
+[2025-12-27 14:51:28] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f8ff81e585b4c6bd7aa1a
+[2025-12-27 14:51:28] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f8ff81e585b4c6bd7aa1a
+[2025-12-27 14:51:28] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8ff81e585b4c6bd7aa1a
+[2025-12-27 14:51:28] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8ff81e585b4c6bd7aa1a
+[2025-12-27 14:51:49] INFO: [CREATE] Transaksi ditambahkan oleh user 694f8ff81e585b4c6bd7aa1a: {"userId":"694f8ff81e585b4c6bd7aa1a","ticker":"TINS","type":"buy","lot":10,"price":1000,"date":"2025-12-20T00:00:00.000Z","_id":"694f90151e585b4c6bd7aa21","__v":0}
+[2025-12-27 14:51:49] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f8ff81e585b4c6bd7aa1a
+[2025-12-27 14:51:50] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f8ff81e585b4c6bd7aa1a
+[2025-12-27 14:51:50] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8ff81e585b4c6bd7aa1a
+[2025-12-27 14:51:50] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8ff81e585b4c6bd7aa1a
+[2025-12-27 14:52:05] INFO: [CREATE] Transaksi ditambahkan oleh user 694f8ff81e585b4c6bd7aa1a: {"userId":"694f8ff81e585b4c6bd7aa1a","ticker":"TINS","type":"sell","lot":1,"price":3000,"date":"2025-12-31T00:00:00.000Z","_id":"694f90251e585b4c6bd7aa27","__v":0}
+[2025-12-27 14:52:05] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f8ff81e585b4c6bd7aa1a
+[2025-12-27 14:52:05] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f8ff81e585b4c6bd7aa1a
+[2025-12-27 14:52:05] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8ff81e585b4c6bd7aa1a
+[2025-12-27 14:52:05] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8ff81e585b4c6bd7aa1a
+[2025-12-27 14:52:31] INFO: [CREATE] Transaksi ditambahkan oleh user 694f8ff81e585b4c6bd7aa1a: {"userId":"694f8ff81e585b4c6bd7aa1a","ticker":"TINS","type":"sell","lot":5,"price":3500,"date":"2025-12-26T00:00:00.000Z","_id":"694f903f1e585b4c6bd7aa2d","__v":0}
+[2025-12-27 14:52:31] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f8ff81e585b4c6bd7aa1a
+[2025-12-27 14:52:31] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f8ff81e585b4c6bd7aa1a
+[2025-12-27 14:52:31] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8ff81e585b4c6bd7aa1a
+[2025-12-27 14:52:31] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8ff81e585b4c6bd7aa1a
+[2025-12-27 14:55:28] INFO: 📘 Swagger UI available at /api-docs
+[2025-12-27 14:55:28] INFO: ✅ MongoDB connected
+[2025-12-27 14:55:28] INFO: 🚀 Server running on http://localhost:5000
+[2025-12-27 14:55:43] INFO: [CREATE] Transaksi ditambahkan oleh user 694f8ff81e585b4c6bd7aa1a: {"userId":"694f8ff81e585b4c6bd7aa1a","ticker":"TINS","type":"sell","lot":2,"price":3000,"date":"2025-12-26T00:00:00.000Z","_id":"694f90ffb41be2743b9d06de","__v":0}
+[2025-12-27 14:55:43] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f8ff81e585b4c6bd7aa1a
+[2025-12-27 14:55:43] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f8ff81e585b4c6bd7aa1a
+[2025-12-27 14:55:43] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8ff81e585b4c6bd7aa1a
+[2025-12-27 14:55:43] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8ff81e585b4c6bd7aa1a
+[2025-12-27 14:55:56] INFO: [CREATE] Transaksi ditambahkan oleh user 694f8ff81e585b4c6bd7aa1a: {"userId":"694f8ff81e585b4c6bd7aa1a","ticker":"TINS","type":"sell","lot":1,"price":1000,"date":"2025-12-27T00:00:00.000Z","_id":"694f910cb41be2743b9d06e4","__v":0}
+[2025-12-27 14:55:56] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f8ff81e585b4c6bd7aa1a
+[2025-12-27 14:55:56] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 694f8ff81e585b4c6bd7aa1a
+[2025-12-27 14:55:56] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8ff81e585b4c6bd7aa1a
+[2025-12-27 14:55:56] INFO: [TRANSACTION STATS] Statistik transaksi user 694f8ff81e585b4c6bd7aa1a
+[2025-12-27 14:56:17] INFO: 📘 Swagger UI available at /api-docs
+[2025-12-27 14:56:17] INFO: ✅ MongoDB connected
+[2025-12-27 14:56:17] INFO: 🚀 Server running on http://localhost:5000

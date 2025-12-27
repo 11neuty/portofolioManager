@@ -1,4 +1,4 @@
-const User = require("../models/users");
+const User = require("../models/User");
 const logger = require("../utils/logger");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
@@ -6,7 +6,6 @@ const jwt = require("jsonwebtoken");
 exports.registerUser = async (req, res) => {
   try {
     const { name, email, password } = req.body;
-
     logger.info(`[REGISTER] Attempt - name: ${name}, email: ${email}`);
 
     const exists = await User.findOne({ email });
@@ -19,8 +18,19 @@ exports.registerUser = async (req, res) => {
     const user = new User({ name, email, password: hashedPassword });
     await user.save();
 
+    const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
+      expiresIn: "1d",
+    });
+
     logger.info(`[REGISTER] Berhasil - User terdaftar dengan email: ${email}, id: ${user._id}`);
-    res.status(201).json({ msg: "User registered" });
+    res.status(201).json({
+      token,
+      user: {
+        _id: user._id,
+        name: user.name,
+        email: user.email,
+      },
+    });
   } catch (err) {
     logger.error(`[REGISTER ERROR] ${err.message}`);
     res.status(500).json({ msg: "Register failed", error: err.message });
@@ -30,7 +40,6 @@ exports.registerUser = async (req, res) => {
 exports.loginUser = async (req, res) => {
   try {
     const { email, password } = req.body;
-
     logger.info(`[LOGIN] Attempt - email: ${email}`);
 
     const user = await User.findOne({ email });
@@ -52,10 +61,21 @@ exports.loginUser = async (req, res) => {
     logger.info(`[LOGIN] Berhasil - ${email} (ID: ${user._id})`);
     res.json({
       token,
-      user: { id: user._id, name: user.name, email: user.email },
+      user: { _id: user._id, name: user.name, email: user.email },
     });
   } catch (err) {
     logger.error(`[LOGIN ERROR] ${err.message}`);
     res.status(500).json({ msg: "Login failed", error: err.message });
+  }
+};
+
+exports.getAllUsers = async (req, res) => {
+  try {
+    const users = await User.find({}, "-password");
+    logger.info(`[GET USERS] ${users.length} users retrieved`);
+    res.json(users);
+  } catch (err) {
+    logger.error(`[GET USERS ERROR] ${err.message}`);
+    res.status(500).json({ msg: "Failed to fetch users", error: err.message });
   }
 };

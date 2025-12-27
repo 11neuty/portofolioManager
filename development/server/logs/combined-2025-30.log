@@ -1,0 +1,21 @@
+[2025-07-21 10:30:59] INFO: 📘 Swagger UI available at /api-docs
+[2025-07-21 10:30:59] INFO: ✅ MongoDB connected
+[2025-07-21 10:30:59] INFO: 🚀 Server running on http://localhost:5000
+[2025-07-22 10:43:08] INFO: 📘 Swagger UI available at /api-docs
+[2025-07-22 10:43:08] INFO: ✅ MongoDB connected
+[2025-07-22 10:43:08] INFO: 🚀 Server running on http://localhost:5000
+[2025-07-22 10:43:50] INFO: [LOGIN] Attempt - email: ryan@gmail.com
+[2025-07-22 10:43:50] INFO: [LOGIN] Berhasil - ryan@gmail.com (ID: 6872099db238c17861d173ca)
+[2025-07-22 10:43:53] INFO: [LOGIN] Attempt - email: ryan@gmail.com
+[2025-07-22 10:43:53] INFO: [LOGIN] Berhasil - ryan@gmail.com (ID: 6872099db238c17861d173ca)
+[2025-07-22 10:43:54] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-22 10:43:54] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-22 10:45:48] INFO: [CREATE] Transaksi ditambahkan oleh user 6872099db238c17861d173ca: {"userId":"6872099db238c17861d173ca","ticker":"BBRI","type":"sell","lot":1,"price":4680,"date":"2025-07-22T00:00:00.000Z","_id":"687f096c705878f86b74bef6","__v":0}
+[2025-07-22 10:45:48] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-22 10:45:48] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-22 10:46:03] INFO: [CREATE] Transaksi ditambahkan oleh user 6872099db238c17861d173ca: {"userId":"6872099db238c17861d173ca","ticker":"BBRI","type":"sell","lot":8,"price":4300,"date":"2025-07-22T00:00:00.000Z","_id":"687f097b705878f86b74befa","__v":0}
+[2025-07-22 10:46:03] INFO: [PORTFOLIO SUMMARY] Diambil oleh user 6872099db238c17861d173ca
+[2025-07-22 10:46:03] INFO: [TRANSACTION STATS] Statistik transaksi user 6872099db238c17861d173ca
+[2025-07-22 10:55:50] INFO: 📘 Swagger UI available at /api-docs
+[2025-07-22 10:55:50] INFO: ✅ MongoDB connected
+[2025-07-22 10:55:50] INFO: 🚀 Server running on http://localhost:5000

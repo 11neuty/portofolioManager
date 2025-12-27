@@ -1,11 +1,13 @@
 const Transaction = require("../models/transaction");
 const logger = require("../utils/logger");
 
-// Tambah transaksi
+// ======================
+// CREATE TRANSACTION
+// ======================
 exports.createTransaction = async (req, res) => {
   try {
     const { ticker, type, lot, price, date } = req.body;
-    const userId = req.user.id || req.user;
+    const userId = req.user;
 
     const transaction = new Transaction({
       userId,
@@ -17,175 +19,196 @@ exports.createTransaction = async (req, res) => {
     });
 
     await transaction.save();
+
     logger.info(`[CREATE] Transaksi ditambahkan oleh user ${userId}: ${JSON.stringify(transaction)}`);
     res.status(201).json(transaction);
   } catch (error) {
     logger.error(`[CREATE ERROR] ${error.message}`);
-    res.status(500).json({ msg: "Gagal menambahkan transaksi", error: error.message });
+    res.status(500).json({ msg: "Gagal menambahkan transaksi" });
   }
 };
 
-// Ambil semua transaksi user
+// ======================
+// GET TRANSACTIONS
+// ======================
 exports.getTransactions = async (req, res) => {
   try {
-    const userId = req.user.id || req.user;
+    const userId = req.user;
     const transactions = await Transaction.find({ userId }).sort({ date: -1 });
 
     logger.info(`[GET] ${transactions.length} transaksi diambil oleh user ${userId}`);
-    res.status(200).json(transactions);
+    res.json(transactions);
   } catch (error) {
     logger.error(`[GET ERROR] ${error.message}`);
-    res.status(500).json({ msg: "Gagal mengambil transaksi", error: error.message });
+    res.status(500).json({ msg: "Gagal mengambil transaksi" });
   }
 };
 
-// Hapus transaksi
+// ======================
+// DELETE TRANSACTION
+// ======================
 exports.deleteTransaction = async (req, res) => {
   try {
-    const cleanId = req.params.id.trim();
-    const userId = req.user.id || req.user;
+    const userId = req.user;
+    const id = req.params.id.trim();
 
-    const transaction = await Transaction.findOneAndDelete({ _id: cleanId, userId });
+    const deleted = await Transaction.findOneAndDelete({ _id: id, userId });
 
-    if (!transaction) {
-      logger.warn(`[DELETE] Gagal - ID ${cleanId} tidak ditemukan untuk user ${userId}`);
+    if (!deleted) {
       return res.status(404).json({ msg: "Transaksi tidak ditemukan" });
     }
 
-    logger.info(`[DELETE] Transaksi ${cleanId} dihapus oleh user ${userId}`);
+    logger.info(`[DELETE] Transaksi ${id} dihapus oleh user ${userId}`);
     res.json({ msg: "Transaksi berhasil dihapus" });
   } catch (error) {
     logger.error(`[DELETE ERROR] ${error.message}`);
-    res.status(500).json({ msg: "Gagal menghapus transaksi", error: error.message });
+    res.status(500).json({ msg: "Gagal menghapus transaksi" });
   }
 };
 
-// Ubah transaksi
+// ======================
+// UPDATE TRANSACTION
+// ======================
 exports.updateTransaction = async (req, res) => {
   try {
-    const cleanId = req.params.id.trim();
-    const userId = req.user.id || req.user;
-
-    logger.info(`🔥 [UPDATE] Request body dari user ${userId}: ${JSON.stringify(req.body)}`);
+    const userId = req.user;
+    const id = req.params.id.trim();
 
     const updated = await Transaction.findOneAndUpdate(
-      { _id: cleanId, userId },
+      { _id: id, userId },
       req.body,
       { new: true }
     );
 
     if (!updated) {
-      logger.warn(`[UPDATE] Transaksi dengan ID ${cleanId} tidak ditemukan untuk user ${userId}`);
       return res.status(404).json({ msg: "Transaksi tidak ditemukan" });
     }
 
-    logger.info(`[UPDATE] Transaksi ${cleanId} diubah oleh user ${userId}: ${JSON.stringify(updated)}`);
+    logger.info(`[UPDATE] Transaksi ${id} diubah oleh user ${userId}`);
     res.json(updated);
   } catch (error) {
     logger.error(`[UPDATE ERROR] ${error.message}`);
-    res.status(500).json({ msg: "Gagal mengubah transaksi", error: error.message });
+    res.status(500).json({ msg: "Gagal mengubah transaksi" });
   }
 };
 
-// 📊 Ringkasan Portofolio
+// ======================
+// PORTFOLIO SUMMARY
+// ======================
 exports.portfolioSummary = async (req, res) => {
   try {
-    const userId = req.user.id || req.user;
-    const transactions = await Transaction.find({ userId });
+    const userId = req.user;
+    const transactions = await Transaction.find({ userId }).sort({ date: 1 });
 
     const summaryMap = {};
 
-    transactions.forEach((tx) => {
+    for (const tx of transactions) {
       const { ticker, type, lot, price } = tx;
-      if (type !== "buy") return;
 
       if (!summaryMap[ticker]) {
         summaryMap[ticker] = { totalLot: 0, totalCost: 0 };
       }
 
-      summaryMap[ticker].totalLot += lot;
-      summaryMap[ticker].totalCost += lot * price;
-    });
+      if (type === "buy") {
+        summaryMap[ticker].totalLot += lot;
+        summaryMap[ticker].totalCost += lot * 100 * price;
+      }
 
-    const summary = Object.entries(summaryMap).map(([ticker, data]) => {
-      const averageBuy = data.totalCost / data.totalLot || 0;
-      return {
-        ticker,
-        totalLot: data.totalLot,
-        totalCost: data.totalCost,
-        averageBuy: Math.round(averageBuy),
-      };
-    });
+      if (type === "sell") {
+        const currentLot = summaryMap[ticker].totalLot;
+        if (currentLot <= 0) continue;
+
+        const avgBuy = summaryMap[ticker].totalCost / currentLot;
+        const sellLot = Math.min(lot, currentLot);
+
+        summaryMap[ticker].totalLot -= sellLot;
+        summaryMap[ticker].totalCost -= avgBuy * sellLot;
+
+        if (summaryMap[ticker].totalLot === 0) {
+          delete summaryMap[ticker];
+        }
+      }
+    }
+
+    const summary = Object.entries(summaryMap).map(([ticker, data]) => ({
+      ticker,
+      totalLot: data.totalLot,
+      totalCost: Math.round(data.totalCost),
+      averageBuy: Math.round(data.totalCost / data.totalLot),
+    }));
 
     logger.info(`[PORTFOLIO SUMMARY] Diambil oleh user ${userId}`);
-    res.status(200).json(summary);
+    res.json(summary);
   } catch (error) {
     logger.error(`[PORTFOLIO SUMMARY ERROR] ${error.message}`);
-    res.status(500).json({ msg: "Gagal mengambil ringkasan", error: error.message });
+    res.status(500).json({ msg: "Gagal mengambil ringkasan" });
   }
 };
 
-// 📈 Statistik Transaksi
+// ======================
+// TRANSACTION STATS
+// ======================
 exports.transactionStats = async (req, res) => {
   try {
-    const userId = req.user.id || req.user;
+    const userId = req.user;
     const transactions = await Transaction.find({ userId });
 
     let totalInvestment = 0;
     let buyCount = 0;
     let sellCount = 0;
+
     const lotMap = {};
-    const avgPrices = [];
 
     for (const tx of transactions) {
       const { ticker, type, lot, price } = tx;
 
+      if (!lotMap[ticker]) {
+        lotMap[ticker] = { totalLot: 0, totalCost: 0 };
+      }
+
       if (type === "buy") {
         buyCount++;
-        totalInvestment += lot * price;
-
-        if (!lotMap[ticker]) {
-          lotMap[ticker] = { totalLot: 0, totalCost: 0 };
-        }
-
+        totalInvestment += lot * 100 * price;
         lotMap[ticker].totalLot += lot;
-        lotMap[ticker].totalCost += lot * price;
+        lotMap[ticker].totalCost += lot * 100 * price;
       }
 
       if (type === "sell") {
         sellCount++;
+
+        const currentLot = lotMap[ticker].totalLot;
+        if (currentLot <= 0) continue;
+
+        const avgBuy = lotMap[ticker].totalCost / currentLot;
+        const sellLot = Math.min(lot, currentLot);
+
+        lotMap[ticker].totalLot -= sellLot;
+        lotMap[ticker].totalCost -= avgBuy * sellLot;
+
+        if (lotMap[ticker].totalLot === 0) {
+          delete lotMap[ticker];
+        }
       }
     }
 
-    const top5 = Object.entries(lotMap)
-      .map(([ticker, data]) => {
-        const avgBuy = data.totalCost / data.totalLot;
-        avgPrices.push(avgBuy);
-        return {
-          ticker,
-          totalLot: data.totalLot,
-          averageBuy: Math.round(avgBuy),
-        };
-      })
+    const top5StocksByLot = Object.entries(lotMap)
+      .map(([ticker, data]) => ({
+        ticker,
+        totalLot: data.totalLot,
+        averageBuy: Math.round(data.totalCost / data.totalLot),
+      }))
       .sort((a, b) => b.totalLot - a.totalLot)
       .slice(0, 5);
 
-    const highestAvgBuy = Math.max(...avgPrices);
-    const lowestAvgBuy = Math.min(...avgPrices);
-
-    const summary = {
+    logger.info(`[TRANSACTION STATS] Statistik transaksi user ${userId}`);
+    res.json({
       totalInvestment,
       buyCount,
       sellCount,
-      top5StocksByLot: top5,
-      highestAverageBuy: Math.round(highestAvgBuy) || 0,
-      lowestAverageBuy: Math.round(lowestAvgBuy) || 0,
-    };
-
-    logger.info(`[TRANSACTION STATS] Statistik transaksi user ${userId}`);
-    res.status(200).json(summary);
+      top5StocksByLot,
+    });
   } catch (error) {
     logger.error(`[TRANSACTION STATS ERROR] ${error.message}`);
-    res.status(500).json({ msg: "Gagal mengambil statistik", error: error.message });
+    res.status(500).json({ msg: "Gagal mengambil statistik" });
   }
 };

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 interface SummaryItem {
   ticker: string;
@@ -12,29 +13,51 @@ interface SummaryItem {
 export default function PortofolioPage() {
   const [data, setData] = useState<SummaryItem[]>([]);
   const [loading, setLoading] = useState(true);
+  const router = useRouter();
 
   useEffect(() => {
     const fetchSummary = async () => {
       const token = localStorage.getItem("token");
 
+      if (!token) {
+        router.push("/login");
+        return;
+      }
+
       try {
-        const res = await fetch("http://localhost:5000/api/transactions/portfolio-summary", {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        });
+        const res = await fetch(
+          "http://localhost:5000/api/transactions/portfolio-summary",
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
+        );
+
+        if (!res.ok) {
+          localStorage.removeItem("token");
+          router.push("/login");
+          return;
+        }
 
         const json = await res.json();
+
+        if (!Array.isArray(json)) {
+          setData([]);
+          return;
+        }
+
         setData(json);
       } catch (error) {
         console.error("Gagal memuat ringkasan:", error);
+        setData([]);
       } finally {
         setLoading(false);
       }
     };
 
     fetchSummary();
-  }, []);
+  }, [router]);
 
   return (
     <div className="p-6">
@@ -50,7 +73,7 @@ export default function PortofolioPage() {
             <tr className="bg-gray-100">
               <th className="border px-4 py-2">Ticker</th>
               <th className="border px-4 py-2">Total Lot</th>
-              <th className="border px-4 py-2">Total Cost (Rp)</th>
+              <th className="border px-4 py-2">Total Cost Rp</th>
               <th className="border px-4 py-2">Rata-rata Beli</th>
             </tr>
           </thead>
@@ -59,8 +82,12 @@ export default function PortofolioPage() {
               <tr key={item.ticker}>
                 <td className="border px-4 py-2">{item.ticker}</td>
                 <td className="border px-4 py-2">{item.totalLot}</td>
-                <td className="border px-4 py-2">{item.totalCost.toLocaleString("id-ID")}</td>
-                <td className="border px-4 py-2">{item.averageBuy.toLocaleString("id-ID")}</td>
+                <td className="border px-4 py-2">
+                  {item.totalCost.toLocaleString("id-ID")}
+                </td>
+                <td className="border px-4 py-2">
+                  {item.averageBuy.toLocaleString("id-ID")}
+                </td>
               </tr>
             ))}
           </tbody>
